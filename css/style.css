@@ -44,90 +44,58 @@ a#resume:hover {
     transition: all 0.5s ease-in-out;
 }
 
-img#trashbunny {
-    float: right;
-    margin-right:-20%;
-    animation: bunnyRun 10s linear infinite;
-    -webkit-animation: bunnyRun 10s linear infinite;
-}
-
-div.cdiv {
+.cdiv {
     min-width: 300px;
     width: 80%;
     max-width: 720px;
-    height: auto;
+    height: 80%;
     position: absolute;
     left: 50%;
     top: 10%;
     -webkit-transform: translate(0%, -50%);
     transform: translate(-50%, 0%);
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     border-radius: 4px;
     padding: 30px;
 }
 
-div.ddiv {
+.ddiv {
+    width: 100%;
     border: 1px solid var(--bd-color);
     border-radius: 4px;
     padding: 4px;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin: 8px 0px;
 }
-div.ndiv {
-    padding: 4px;
-}
-div.clip {
-    width: inherit;
-    overflow: clip;
-    position: absolute;
-}
-div.cwords {
+.cwords {
     padding: 8px;
     text-align: center;
 }
-div.flex-container {
+.flex-container {
     width: inherit;
     display: flex;
     justify-content: center;
     align-content:space-evenly;
     gap: 4px;
 }
-div.button {
+.button {
     flex: 100;
     text-align: center;
     padding:8px;
     border-radius: 4px;
     background-color: var(--bg-color2);
+    transition: all 0.5s ease-in-out;
 }
-
-div.dropdown {
-    display: inline-block;
-    width: auto;
-    background-color: var(--bg-color);
-    font-size: inherit;
-    padding: 2px 4px 6px 4px;
-    height: 1em;
-    border-radius: 4px;
-    transition: all 0.5s ease-out 0.2s;
-    overflow: clip;
+.button:hover {
+    cursor: pointer;
+    background-color: var(--hl-color);
+    color: var(--color2);
+    transition: all 0.5s ease-in-out;
 }
-div.dd-content {
-    display: block;
-    padding: 4px;
-    margin-top: 4px;
-    border-top: 2px solid var(--bd-color);
-    width: inherit;
-    font-size: smaller;
-    box-sizing: border-box;
-}
-div.dd-content p {
-    padding: 0px;
-    margin: 2px;
-}
-div.dropdown:hover {
-    height: auto;
-    transition: all 0.5s ease-in 0.2 s;
-}
-div#main-title {
+#main-title {
     width: auto;
     font-size: 24px;
     text-align: center;
@@ -135,16 +103,17 @@ div#main-title {
     align-items: baseline;
     justify-content: center;
     gap: 6px;
+    margin-bottom: 8px;
 }
 
-span#title-name-span {
+.btn-span {
     cursor: pointer;
     padding: 2px 8px 4px 8px;
     border-radius: 4px;
     background-color: var(--bg-color2);
-    transition: all 0.5s ease-in-out;
+    transition: all 1s;
 }
-span#title-name-span:hover {
+#title-name-span:hover {
     background-color: var(--bg-color3);
     color: var(--color2);
     transition: all 0.5s ease-in-out;

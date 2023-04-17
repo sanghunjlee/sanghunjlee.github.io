@@ -9,36 +9,14 @@
   </head>
 
   <body>
-    <div class="cdiv">
-      <div id="main-title">
-          Hi, there. I'm 
-          <span id="title-name-span" onclick="onClickNameChange(this)"> 
-            Sanghun
-          </span>
-      </div>
-      
-      <div class="ddiv">
-        <div class="cwords">
-          <span>For professional information, please refer to my <a id="resume" href="page/resume.html">resume</a>.  </span>
-        </div>
-      </div>
-      
-      <div class="ddiv">
-        <div class="flex-container">
-          <div class="button">
-            Menu1
-          </div>
-          <div class="button">
-            Menu1
-          </div>
-          <div class="button">
-            Menu1
-          </div>
-        </div>
-      </div>
-
+    <div class="cdiv" id="main">
     </div>
     
     <script src="js/script.js"></script>
+    <script>
+      window.onload = function() {
+        index.init();
+      }
+    </script>
   </body>
 </html>
